@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768054CE1DA44DB10009B056 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768054CD1DA44DB10009B056 /* Alamofire.framework */; };
 		C9F9012E1DA443DC00C4D37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9012D1DA443DC00C4D37D /* AppDelegate.swift */; };
 		C9F901301DA443DC00C4D37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9012F1DA443DC00C4D37D /* ViewController.swift */; };
 		C9F901331DA443DC00C4D37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F901311DA443DC00C4D37D /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		768054CD1DA44DB10009B056 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		C9F9012A1DA443DC00C4D37D /* ASE Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASE Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F9012D1DA443DC00C4D37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F9012F1DA443DC00C4D37D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768054CE1DA44DB10009B056 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		768054CC1DA44D9D0009B056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768054CD1DA44DB10009B056 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9F901211DA443DC00C4D37D = {
 			isa = PBXGroup;
 			children = (
+				768054CC1DA44D9D0009B056 /* Frameworks */,
 				C9F9012C1DA443DC00C4D37D /* ASE Demo iOS */,
 				C9F901441DA443DC00C4D37D /* ASE Demo iOSTests */,
 				C9F9014F1DA443DC00C4D37D /* ASE Demo iOSUITests */,
@@ -418,6 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6F9773F85D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ASE Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.giganom.ASE-Demo-iOS";
@@ -431,6 +447,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6F9773F85D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ASE Demo iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.giganom.ASE-Demo-iOS";
@@ -516,6 +536,7 @@
 				C9F901571DA443DC00C4D37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F901581DA443DC00C4D37D /* Build configuration list for PBXNativeTarget "ASE Demo iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +545,7 @@
 				C9F9015A1DA443DC00C4D37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9F9015B1DA443DC00C4D37D /* Build configuration list for PBXNativeTarget "ASE Demo iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +554,7 @@
 				C9F9015D1DA443DC00C4D37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
