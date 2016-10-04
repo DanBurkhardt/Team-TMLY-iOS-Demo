@@ -13,6 +13,7 @@
 		768054D31DA45B6A0009B056 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768054D21DA45B6A0009B056 /* SwiftyJSON.framework */; };
 		768054D41DA45B720009B056 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768054D21DA45B6A0009B056 /* SwiftyJSON.framework */; };
 		768054D51DA45B720009B056 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 768054D21DA45B6A0009B056 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C97C720C1DA45EB100A44B2F /* VacationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C720B1DA45EB100A44B2F /* VacationHelper.swift */; };
 		C9F9012E1DA443DC00C4D37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9012D1DA443DC00C4D37D /* AppDelegate.swift */; };
 		C9F901301DA443DC00C4D37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9012F1DA443DC00C4D37D /* ViewController.swift */; };
 		C9F901331DA443DC00C4D37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F901311DA443DC00C4D37D /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		768054CD1DA44DB10009B056 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		768054D21DA45B6A0009B056 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		C97C720B1DA45EB100A44B2F /* VacationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacationHelper.swift; sourceTree = "<group>"; };
 		C9F9012A1DA443DC00C4D37D /* ASE Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASE Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F9012D1DA443DC00C4D37D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F9012F1DA443DC00C4D37D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		C9F9012C1DA443DC00C4D37D /* ASE Demo iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C97C720B1DA45EB100A44B2F /* VacationHelper.swift */,
 				C9F9012D1DA443DC00C4D37D /* AppDelegate.swift */,
 				C9F9012F1DA443DC00C4D37D /* ViewController.swift */,
 				C9F901311DA443DC00C4D37D /* Main.storyboard */,
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97C720C1DA45EB100A44B2F /* VacationHelper.swift in Sources */,
 				C9F901301DA443DC00C4D37D /* ViewController.swift in Sources */,
 				C9F9012E1DA443DC00C4D37D /* AppDelegate.swift in Sources */,
 				C9F901361DA443DC00C4D37D /* ASE_Demo_iOS.xcdatamodeld in Sources */,
