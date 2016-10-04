@@ -13,38 +13,33 @@ class VacationHelper {
     
     var currentID = ""
     
+    var apiURL = "http://aseprojecttest.mybluemix.net/aseproject"
+    
+    var imageBaseUrl = "http://danburkhardt.com/CS/cs4156/vactions/"
+    
+    var defaults = UserDefaults.standard
     
     func getVacation(_ id: String, completion:@escaping (_ success: Bool) -> Void) {
         
-        if id != nil{
-            currentID = id
-        }
+        let fullURL = "\(imageBaseUrl)\(id).jpg"
         
-        if currentID != nil{
+        Alamofire.request(fullURL).responseJSON { response in
+            //print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.data)     // server data
+            //print(response.result)   // result of response serialization
+            
+            
+            self.defaults.set(response.data, forKey: "testImage")
+            
             completion(true)
-        }else{
-            completion(false)
+            
+            /*
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }*/
         }
         
-        /*
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                if let value = response.result.value {
-                    let json = JSON(value)
-                    
-                    print("JSON: \(json)")
-                    
-                    completion(success: true)
-                    
-                }
-            case .Failure(let error):
-                print(error)
-                completion(success: false)
-            }
-
-        
-         })*/
     }
 
 }
