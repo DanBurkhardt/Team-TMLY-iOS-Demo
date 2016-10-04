@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		768054CE1DA44DB10009B056 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768054CD1DA44DB10009B056 /* Alamofire.framework */; };
+		768054CF1DA451390009B056 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768054CD1DA44DB10009B056 /* Alamofire.framework */; };
+		768054D01DA451390009B056 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 768054CD1DA44DB10009B056 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9F9012E1DA443DC00C4D37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9012D1DA443DC00C4D37D /* AppDelegate.swift */; };
 		C9F901301DA443DC00C4D37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F9012F1DA443DC00C4D37D /* ViewController.swift */; };
 		C9F901331DA443DC00C4D37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F901311DA443DC00C4D37D /* Main.storyboard */; };
@@ -35,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		768054D11DA451390009B056 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				768054D01DA451390009B056 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		768054CD1DA44DB10009B056 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		C9F9012A1DA443DC00C4D37D /* ASE Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASE Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768054CE1DA44DB10009B056 /* Alamofire.framework in Frameworks */,
+				768054CF1DA451390009B056 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +167,7 @@
 				C9F901261DA443DC00C4D37D /* Sources */,
 				C9F901271DA443DC00C4D37D /* Frameworks */,
 				C9F901281DA443DC00C4D37D /* Resources */,
+				768054D11DA451390009B056 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
