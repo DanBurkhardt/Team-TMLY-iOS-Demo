@@ -13,9 +13,24 @@ import SwiftyJSON
 class ViewController: UIViewController {
 
     let vacationHelper = VacationHelper()
+    let defaults = UserDefaults.standard
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var label: UILabel!
     
     @IBAction func randomize(_ sender: AnyObject) {
-        let vacationId = Int(arc4random_uniform(3) + 1)
+        let id = String(Int(arc4random_uniform(3) + 1))
+        vacationHelper.getVacation(id) { (success) in
+            if success {
+                var imageData = self.defaults.object(forKey: "testImage") as! Data
+                var image = UIImage(data: imageData)
+                self.imageView.image = image
+            } else {
+                print("Could not reach vacation server")
+            }
+        }
+        self.label.isHidden = false
     }
     
     override func viewDidLoad() {
