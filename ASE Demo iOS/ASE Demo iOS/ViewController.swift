@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         let id = String(Int(arc4random_uniform(3) + 1))
         vacationHelper.getVacation(id) { (success) in
             if success {
-                var imageData = self.defaults.object(forKey: "testImage") as! Data
-                var image = UIImage(data: imageData)
+                let imageData = self.defaults.object(forKey: "testImage") as! Data
+                let image = UIImage(data: imageData)
                 self.imageView.image = image
             } else {
                 print("Could not reach vacation server")
@@ -36,7 +36,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
+        if let imageData = self.defaults.object(forKey: "testImage") as! Data? {
+            let image = UIImage(data: imageData)
+            self.imageView.image = image
+        }
         
     }
 
@@ -44,8 +47,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
-
 }
 
